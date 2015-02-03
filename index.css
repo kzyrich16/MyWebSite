@@ -1,7 +1,5 @@
 .masterhead {
   background-color: rgba(255, 99, 71, 1);
   font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-.fonts {
-  width: 500px;
+  font-size: 150px;
 }
