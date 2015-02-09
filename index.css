@@ -4,6 +4,5 @@
   font-size: 500px;
 }
 .pick:hover {
-  background-color: #808080;
-  color: red;
+  background-color: #808080 !important;
 }
