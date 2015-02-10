@@ -19,3 +19,8 @@
 {
 	max-width: 700px;
 }
+
+.home-button {
+	background-color: #808080;
+	color: white;
+}
