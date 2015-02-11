@@ -28,7 +28,7 @@ $(document).ready(function()
 
 	function isOneOperandOperator(n) 
 	{
-  		return n == "SQRT" || n == "log";
+  		return n == "SQRT" || n == "log" || n == "F->C" || n == "C->F";
 	}
 
 	function isTwoOperandOperator(n) 
@@ -41,9 +41,9 @@ $(document).ready(function()
 	{
 		var input = $(this).text();
 
-		if (input == "CLEAR")
+		if (input == "CLEAR") {
 			clear();
-		
+		}
 		if (state == 0)
 		{
 			if (input == "RAND" && first_operand == null)
@@ -86,7 +86,17 @@ $(document).ready(function()
 				}
 
 				$('#question').append(" =");
-				$('#answer').append(answer).hide().fadeIn(1000);				
+				$('#answer').append(answer).fadeIn(1000);				
+			} 
+			else if (operator == "F->C")
+			{
+				answer = convertFToC(first_operand) + "&deg;C";
+				$('#question').append("&deg;F");
+			}
+			else if (operator == "C->F")
+			{
+				answer = convertCToF(first_operand) + "&deg;F";
+				$('#question').append("&deg;C");
 			}
 		}
 
@@ -119,10 +129,10 @@ $(document).ready(function()
 				else if (operator == "^")
 					answer = power(parseInt(first_operand), parseInt(second_operand));	
 
-				$('#question').append(" =");
-				$('#answer').append(answer).hide().fadeIn(1000);
+				$('#question').append(" = ");
+				$('#answer').append(answer).css({border: "1px solid black"}).fadeIn(1000);
 				state = 2;
-			}		
+			}
 		}
 
 	});
