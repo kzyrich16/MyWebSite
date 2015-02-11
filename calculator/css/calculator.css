@@ -20,7 +20,9 @@
 	max-width: 700px;
 }
 
-/*.home-button {
-	background-color: #808080;
+.pick {
+	padding-top: 5px;
+	padding-right: 5px;
 	color: white;
-}*/
+	background-color: #2F4F4F;
+}
