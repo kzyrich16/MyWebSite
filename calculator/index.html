@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -8,9 +9,18 @@
 	<title>ScriptEd Unit 5 Project: Calculator</title>
 </head>
 <body>
-
+	<div class="container">
+		
 		<h1>ScriptEd Unit 5 Project: Calculator</h1>
 		<hr/>
+			<div id="question" class="text-center">
+			
+		</div>
+		<div id="answer" class="text-center">
+			
+		</div>
+		<br >
+		<br >
 		<div class="row">
 			<div class="col-md-12">
 				<div class="row calc-row">	
@@ -29,6 +39,9 @@
 					<div class="col-md-2">
 						<button type="button" class="btn btn-primary btn-block btn-lg calc-btn">RAND</button>
 					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-primary btn-block btn-lg calc-btn">F->C</button>
+					</div>
 				</div>
 				<div class="row calc-row">	
 					<div class="col-md-2">
@@ -45,6 +58,9 @@
 					</div>
 					<div class="col-md-2">
 						<button type="button" class="btn btn-primary btn-block btn-lg calc-btn">SQRT</button>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn btn-primary btn-block btn-lg calc-btn">C->F</button>
 					</div>
 				</div>
 				<div class="row calc-row">	
@@ -83,13 +99,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="question" class="text-center">
-			
-		</div>
-		<div id="answer" class="text-center">
-			
-		</div>
 	</div>
-	<div class="container home-button"><a href="../">Home</a>
+	<a href="../"><div class="col-sm-1 pull-left pick"><p>Home</p></div></a>
 </body>
 </html>
